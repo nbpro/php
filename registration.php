@@ -42,20 +42,20 @@ function verify(){
 			
 </script>
 </head>
-<body>
-<form method = post action = "registrationaccount.php" name =registration>
+<body bgcolor="cyan">
+<form method = "post" action = "registrationaccount.php" name =registration>
 <table>
 <tr><td>Name</td>
-	<td><input type = text name =myname></td></tr>
+	<td><input type = "text" name ="myname"></td></tr>
 <tr><td>Age</td>
-	<td><input type = text name =myage></td></tr>
+	<td><input type = "text" name ="myage"></td></tr>
 <tr><td>Gender</td>
-	<td><input type = radio name =gender value =male>M
+	<td><input type = "radio" name ="gender "value ="male">M
 	<input type = radio name =gender value =female>F</td></tr>
 <tr><td>Language</td>
-	<td><input type = checkbox name =lang1 value =hindi>Hindi
-	<input type = checkbox name =lang2 value =english>English
-	<input type = checkbox name =lang3 value =bengoli>Bengoli</td></tr>
+	<td><input type = "checkbox" name ="lang1" value ="hindi">Hindi
+	<input type = "checkbox" name =lang2 value ="english">English
+	<input type = "checkbox" name =lang3 value ="bengoli">Bengoli</td></tr>
 	
 <tr><td>User Name</td>
 	<td><input type = text name =uname></td></tr>
