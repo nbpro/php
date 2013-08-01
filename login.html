@@ -1,3 +1,21 @@
+<?php
+include(db.php)
+$account=array("dablu","neeraj","saurabh");
+$result=array();
+if(isset($_GET[uname]))
+{
+$uname=filter_var($GET['uname'],FILTER_SANATIZE_STRING);
+if(in_array($uname,$accounts))
+{
+$result['status']="useralraedy exists";
+}
+else
+{
+$result['status']="congrats username is available";
+}
+echo json-encode($results);
+}
+?>
 <html>
 <head>
 <script>
@@ -25,7 +43,9 @@ function verifying(){
 <form method = post action = login.php name =login>
 <table bgcolor=white border =0 align =center >
 <tr><td>User Name </td>
-	<td><input type = text name =uname ></td></tr>
+	<td><input type = text name =uname ></td>
+		<td><a href="login.php">check username</a></td>
+	</tr>
 <tr><td>Password</td>
 	<td><input type = password name =pass ></td></tr>
 <tr><td><input type = submit value ="Login" onclick ="return verifying(login);">
